@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './global.css';
 
 function firstWay(word, key) {
-  const middle = Math.ceil(word.length / 2)
+  const middle = Math.floor(word.length / 2)
   return <React.Fragment key={key}>
     <b>{word.slice(undefined, middle)}</b>
 
